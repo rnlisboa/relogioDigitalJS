@@ -1,0 +1,53 @@
+@font-face{
+	font-family: Digital;
+	src: url("digital-7.ttf");
+}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+#bg{
+	height: 100vh;
+	max-width: 100%;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.clock{
+	width: 40%;
+	height: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.23);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	border: 1px solid rgba(255,255,255,0.25);
+	border-radius: 1rem;
+}
+.time{
+	min-width: 5.5rem;
+	color: white;
+	font-family: Digital;
+	font-size: 6rem;
+}
+a{	
+	text-decoration: none;
+	color: white;
+	font-family: 'Nunito', sans-serif;
+}
+footer{
+	font-size: .7rem;
+	position: fixed;
+	top: 0;
+}
+@media (max-width: 750px)
+{
+  .clock
+   {
+    width: 60%;
+   }
+}
